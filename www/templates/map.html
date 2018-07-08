@@ -1,5 +1,10 @@
 <ion-view view-title="Map">
   <ion-content>
+    <ion-refresher
+       	pulling-text="Pull to refresh..."
+       	on-refresh="doRefresh()">
+    </ion-refresher>
+
     <h1>Map {{ mapId }}</h1>
 
     <angular-maphilight

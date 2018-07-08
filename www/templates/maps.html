@@ -1,5 +1,10 @@
 <ion-view view-title="Maps">
   <ion-content>
+    <ion-refresher
+       	pulling-text="Pull to refresh..."
+       	on-refresh="doRefresh()">
+    </ion-refresher>
+
     <ion-list>
       <ion-item ng-repeat="map in maps" href="#/app/maps/{{map.id}}">
         {{map.title}}

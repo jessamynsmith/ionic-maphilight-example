@@ -41,14 +41,20 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('MapsCtrl', function($scope) {
+.controller('MapsCtrl', function($scope, $timeout) {
   $scope.maps = [
     { title: 'Map 1', id: 1 },
     { title: 'Map 2', id: 2 },
   ];
+
+  $scope.doRefresh = function() {
+    $timeout(function() {
+      $scope.$broadcast('scroll.refreshComplete');
+    }, 500);
+  };
 })
 
-.controller('MapCtrl', function($scope, $stateParams) {
+.controller('MapCtrl', function($scope, $stateParams, $timeout) {
   $scope.mapId = $stateParams.mapId;
 
   $scope.config = {
@@ -73,5 +79,11 @@ angular.module('starter.controllers', [])
     shadowColor: '#000000',
     shadowOpacity: 0.8,
     shadowRadius: 10
+  };
+
+  $scope.doRefresh = function() {
+    $timeout(function() {
+      $scope.$broadcast('scroll.refreshComplete');
+    }, 500);
   };
 });
