@@ -1,7 +1,7 @@
 ionic-maphilight-example
 ========================
 
-Example of using [Angular Maphilight](http://abdallamohamed.github.io/Angular-Maphilight) in an Ionic app
+Example of using [jQuery Maphilight](https://github.com/markitosgv/maphilight) in an Ionic app
 
 View the running app on [Heroku](https://ionic-maphilight-example.herokuapp.com/)
 

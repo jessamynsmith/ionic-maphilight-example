@@ -7,12 +7,9 @@
 
     <h1>Map {{ mapId }}</h1>
 
-    <angular-maphilight
-        id="statesMap"
-        angular-maphilight-config="config">
-        <img src="img/states_imgmap.gif" width="480" height="330" class="img-responsive">
+        <img id="map" src="img/states_imgmap.gif" width="480" height="330" class="img-responsive" usemap="#features">
 
-        <map>
+        <map name="features">
           <area shape="poly"
           coords="27,5,25,9,26,13,26,24,26,30,31,34,33,40,40,41,45,42,52,42,57,42,66,44,74,46,77,34,79,20,79,15,61,10,43,5,40,11,28,5"
           alt="State Profile: Washington" title="State Profile: Washington" ng-click="clicked('h')">
@@ -200,7 +197,6 @@
           coords="422,71,427,67,426,63,427,59,434,54,434,49,441,47,445,44,441,40,436,35,433,21,428,18,425,20,421,19,419,21,419,26,417,31,416,36,418,38,416,41,416,45,414,46"
           alt="State Profile: Maine" title="State Profile: Maine">
         </map>
-      </angular-maphilight>
 
     <br>
     <p>
