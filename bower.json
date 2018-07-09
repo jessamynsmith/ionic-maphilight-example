@@ -5,7 +5,7 @@
     "ionic": "ionic-team/ionic-bower#1.3.4"
   },
   "dependencies": {
-    "maphilight": "^1.3.0",
+    "maphilight": "git@github.com:jessamynsmith/maphilight.git#d146f46d62b8f2316853aff4569a25a82739a9a8",
     "jQuery": "~2.2.4"
   }
 }
