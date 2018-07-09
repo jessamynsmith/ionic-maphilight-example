@@ -5,6 +5,8 @@ Example of using [jQuery Maphilight](https://github.com/markitosgv/maphilight) i
 
 View the running app on [Heroku](https://ionic-maphilight-example.herokuapp.com/)
 
+Note: this project uses a [forked version](https://github.com/jessamynsmith/maphilight) of jQuery maphilight because the original plugin does not work correctly with Ionic.
+
 Development
 -----------
 
